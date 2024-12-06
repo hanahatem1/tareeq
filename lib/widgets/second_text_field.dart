@@ -15,15 +15,15 @@ final String labalText;
                   decoration: InputDecoration(
                     border:OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16),
-                      borderSide: BorderSide(color: kprimaryColor)
+                      borderSide: const BorderSide(color: kprimaryColor)
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: kprimaryColor),
+                      borderSide:const  BorderSide(color: kprimaryColor),
                      borderRadius: BorderRadius.circular(16),
                     ),
                     hintText: hintText,
                     labelText: labalText,
-                    labelStyle:TextStyle(color: Color(0xff3C4B63),fontFamily: kFont,fontSize: 16,fontWeight: FontWeight.w700) ,
+                    labelStyle:const TextStyle(color: Color(0xff3C4B63),fontFamily: kFont,fontSize: 16,fontWeight: FontWeight.w700) ,
                   ),
                 ),
               

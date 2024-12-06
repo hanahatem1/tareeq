@@ -42,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Center(
                 child: Column(
               children: [
-                Column(children: [
+                const  Column(children: [
                   SizedBox(height: 90),
                   Text(
                     "3 alTareeQ",
@@ -55,14 +55,14 @@ class _LoginPageState extends State<LoginPage> {
                   Text("for car services",
                       style: TextStyle(
                           fontFamily: kFont, color: kprimaryColor, fontSize: 20)),
-                  SizedBox(height: 35),
+                    SizedBox(height: 35),
                 ]),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 24),
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("  User email",
+                      const Text("  User email",
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Color(0xff675c3d))),
@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                         hintText: "Enter your Email",
                       ),
                       const SizedBox(height: 50),
-                      Text(
+                      const Text(
                         "  Password",
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -89,8 +89,8 @@ class _LoginPageState extends State<LoginPage> {
                     ],
                   ),
                 ),
-                SizedBox(height: 16),
-                Padding(
+                const SizedBox(height: 16),
+                const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 24),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -102,7 +102,7 @@ class _LoginPageState extends State<LoginPage> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Column(
@@ -134,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
                               } catch (e) {
                                 print(e);
                                 ScaffoldMessenger.of(context).showSnackBar(
-                                    SnackBar(
+                                   const SnackBar(
                                         content: Text('there was an error')));
                               } isLoading=false;
                               setState(() {
@@ -146,14 +146,14 @@ class _LoginPageState extends State<LoginPage> {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
-                    Text(
+                    const Text(
                       "or continue with",
                       style: TextStyle(color: Color(0xff675c3d)),
                     ),
-                    SizedBox(height: 12),
+                    const SizedBox(height: 12),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 24),
                       child: Row(
@@ -165,11 +165,11 @@ class _LoginPageState extends State<LoginPage> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 27),
+                    const SizedBox(height: 27),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           "don't have an accout?",
                           style: TextStyle(color: kprimaryColor),
                         ),
@@ -178,7 +178,7 @@ class _LoginPageState extends State<LoginPage> {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => RegisterPage()));
                             },
-                            child: Text(" Register now"))
+                            child:const Text(" Register now"))
                       ],
                     )
                   ],

@@ -42,8 +42,8 @@ class _RegisterPageState extends State<RegisterPage> {
                    padding: const EdgeInsets.symmetric(horizontal: 24),
                    child: Column(
                     children: [
-                         SizedBox(height: 90),
-                             Text(
+                        const  SizedBox(height: 90),
+                           const   Text(
                               "3 alTareeQ",
                               style:TextStyle(
                                 fontFamily: kFont,
@@ -51,7 +51,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 fontSize: 35,
                                 fontWeight: FontWeight.bold
                                 ) ,),
-                               Text(
+                              const  Text(
                                 "for car services",
                                 style:TextStyle(
                                   fontFamily:kFont,
@@ -62,7 +62,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("  User Email",style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff675c3d))),
+                                     const  Text("  User Email",style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff675c3d))),
                                 CustomTextField(
                                    onChanged: (data){
                                    phone=data;
@@ -70,21 +70,21 @@ class _RegisterPageState extends State<RegisterPage> {
                                   hintText: "Enter Email",
                                   ),
                                const SizedBox(height:50 ),
-                                Text("  Phone Number",style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff675c3d))),
+                                const Text("  Phone Number",style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff675c3d))),
                                  CustomTextField(
                                  
                                  
                                   hintText: "Enter Phone Number",
                                   ),
                                   const SizedBox(height:50 ),
-                                Text("  Password",style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff675c3d))),
+                               const  Text("  Password",style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff675c3d))),
                                  CustomTextField(
                                   onChanged: (data){
                                     password=data;
                                   },
                                   hintText: "Enter Password",
                                   ),
-                                 SizedBox(height:30),
+                                 const SizedBox(height:30),
                                  CustomButton(
                                   onTap: () async{
                                    if (formKey.currentState!.validate()) {
@@ -113,16 +113,16 @@ class _RegisterPageState extends State<RegisterPage> {
                                   },
                                   text: "Register"
                                   ),
-                                 SizedBox(height: 27),
+                                const  SizedBox(height: 27),
                                  Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Have an account already?",style: TextStyle(color: kprimaryColor),),
+                                   const  Text("Have an account already?",style: TextStyle(color: kprimaryColor),),
                                 GestureDetector(
                                   onTap: (){
                                     Navigator.of(context).pop();
                                   },
-                                  child: Text(" Login now"))
+                                  child: const Text(" Login now"))
                                   ],
                                  )
                                     ],

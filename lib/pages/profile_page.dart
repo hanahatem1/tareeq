@@ -99,7 +99,7 @@ XFile? _image;
       });
 
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Profile picture saved successfully!"))
+       const  SnackBar(content: Text("Profile picture saved successfully!"))
       );
     } catch (e) {
       setState(() => _isSaving = false); // Stop saving indicator
@@ -113,7 +113,7 @@ XFile? _image;
     return Scaffold(
      appBar: AppBar(
       backgroundColor: kprimaryColor,
-      title: Text('Edit Profile',style: TextStyle(color: Colors.white,fontFamily: kFont,fontWeight: FontWeight.bold,fontSize: 20),),
+      title: const Text('Edit Profile',style: TextStyle(color: Colors.white,fontFamily: kFont,fontWeight: FontWeight.bold,fontSize: 20),),
       centerTitle: true,
       automaticallyImplyLeading: false,
      leading: IconButton(
@@ -130,7 +130,7 @@ XFile? _image;
           children: [
             Container(
           height:90,width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: kprimaryColor,
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(26),bottomRight: Radius.circular(26))
         ),
@@ -172,15 +172,15 @@ XFile? _image;
             },
             icon:GestureDetector(
               onTap:  _pickImage,
-              child: Icon(Icons.add_a_photo_rounded,color: Colors.white,size:20)) ,
+              child: const Icon(Icons.add_a_photo_rounded,color: Colors.white,size:20)) ,
               ),
         )
         ),
        
           ],
         ),
-      Padding(
-        padding: const EdgeInsets.all(12),
+      const Padding(
+        padding:  EdgeInsets.all(12),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
@@ -196,12 +196,12 @@ XFile? _image;
             onTap: _uploadImage,
              child: Container(
                      decoration: BoxDecoration(        
-                         color: Color(0xffA1ACBC),
+                         color:const  Color(0xffA1ACBC),
                         borderRadius: BorderRadius.circular(24),
                       ),
                       width:80,
                       height: 20,
-                      child: Center(child: Text('Upload image',style: TextStyle(fontSize: 10,color: Colors.white),)),
+                      child: const Center(child: Text('Upload image',style: TextStyle(fontSize: 10,color: Colors.white),)),
              ),
            ),
          )
@@ -223,7 +223,7 @@ XFile? _image;
             height: 1,
           ),
           const SizedBox(height: 20),
-          Padding(
+         const  Padding(
             padding: const EdgeInsets.only(left: 33),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -252,13 +252,13 @@ XFile? _image;
               children: [
                 Container(
                  decoration: BoxDecoration(        
-                     color: Color(0xffFFF3CF),
+                     color: const Color(0xffFFF3CF),
                     borderRadius: BorderRadius.circular(24),
-                    border: Border.all(color:Color.fromARGB(255, 233, 228, 212))
+                    border: Border.all(color:const Color.fromARGB(255, 233, 228, 212))
                   ),
                   width: 110,
                   height: 22,
-                  child: Row(
+                  child:const  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.add,color: Color(0xffE8C872),size: 16,),
@@ -290,7 +290,7 @@ XFile? _image;
                   border: Border.all(color: Colors.black),
                   borderRadius: BorderRadius.circular(24)
                 ),
-                child: Center(child: Text('CANCEL',style: TextStyle(fontFamily: kFont,fontWeight: FontWeight.w700,fontSize: 12),)),
+                child: const Center(child: Text('CANCEL',style: TextStyle(fontFamily: kFont,fontWeight: FontWeight.w700,fontSize: 12),)),
                ),
                Container(
                 height: 33,
@@ -299,7 +299,7 @@ XFile? _image;
                   color: Colors.green,
                   borderRadius: BorderRadius.circular(24)
                 ),
-                child: Center(child: Text('SAVE',style: TextStyle(color:Colors.white ,fontFamily: kFont,fontWeight: FontWeight.w700,fontSize: 12),)),
+                child:const  Center(child: Text('SAVE',style: TextStyle(color:Colors.white ,fontFamily: kFont,fontWeight: FontWeight.w700,fontSize: 12),)),
                ),
               ],
             ),

@@ -33,8 +33,8 @@ TextEditingController controller= TextEditingController();
           onPressed: (){
             Navigator.of(context).pop();
           },
-          icon: Icon(Icons.arrow_back,color: Colors.white,),),
-        title: Row(
+          icon: const Icon(Icons.arrow_back,color: Colors.white,),),
+        title:const Row(
           children: [
             CircleAvatar(
               radius: 25,
@@ -80,19 +80,19 @@ TextEditingController controller= TextEditingController();
                       );
                     },
                     decoration: InputDecoration(
-                      fillColor: Color(0xffF6F7F9),
+                      fillColor:const Color(0xffF6F7F9),
                       filled: true,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(32),
-                        borderSide: BorderSide(color:Color(0xffF6F7F9) )
+                        borderSide:const BorderSide(color:Color(0xffF6F7F9) )
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(32),
-                        borderSide: BorderSide(color:Color(0xffF6F7F9) )
+                        borderSide: const BorderSide(color:Color(0xffF6F7F9) )
                       ),
                       hintText: 'ask bot',
-                      hintStyle: TextStyle(color:Color(0xff637A9F),fontFamily: kFont),
-                      suffixIcon: Icon(Icons.send,color:Color(0xff637A9F),)
+                      hintStyle: const TextStyle(color:Color(0xff637A9F),fontFamily: kFont),
+                      suffixIcon: const Icon(Icons.send,color:Color(0xff637A9F),)
                     ),
                                  ),
                 ),
