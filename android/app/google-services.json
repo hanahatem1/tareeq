@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809488755140",
+    "project_id": "al-tareeq",
+    "storage_bucket": "al-tareeq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809488755140:android:cd3bf34b96099942249c91",
+        "android_client_info": {
+          "package_name": "com.example.tareeq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjQTkoEf0JvJ37j9jiUOJxGysA5up1bNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
